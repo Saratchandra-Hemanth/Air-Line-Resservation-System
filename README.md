@@ -32,3 +32,15 @@ Contributions to the project are welcome. Feel free to fork the repository and s
 <br>
 ## Login and Registration
 ![image](https://github.com/Saratchandra-Hemanth/Air-Line-Resservation-System/assets/87907987/0c209412-2b74-4b83-8ee9-a35d59e1917c)
+<br>
+## Flight search
+![image](https://github.com/Saratchandra-Hemanth/Air-Line-Resservation-System/assets/87907987/e1a1ed3e-6d74-4efd-bacf-99772c6a7bc7)
+<br>
+## Displaying Flights
+![image](https://github.com/Saratchandra-Hemanth/Air-Line-Resservation-System/assets/87907987/015439c9-9ebc-4166-ab4d-5bf4ada2683d)
+<br>
+## Conformation Mail
+![image](https://github.com/Saratchandra-Hemanth/Air-Line-Resservation-System/assets/87907987/31eccb64-671d-4a24-bef6-61d81e6fb36d)
+
+
+
