@@ -38,9 +38,7 @@ Contributions to the project are welcome. Feel free to fork the repository and s
 <br>
 ## Displaying Flights
 ![image](https://github.com/Saratchandra-Hemanth/Air-Line-Resservation-System/assets/87907987/015439c9-9ebc-4166-ab4d-5bf4ada2683d)
-<br>
-## Conformation Mail
-![image](https://github.com/Saratchandra-Hemanth/Air-Line-Resservation-System/assets/87907987/31eccb64-671d-4a24-bef6-61d81e6fb36d)
+
 
 
 
