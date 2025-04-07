@@ -34,13 +34,13 @@ public class FlightController {
         LOGGER.info("Flights found are"+flights.toString());
         return "flights/displayFlights";
     }
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('FLIGHTS-ADMIN')")
     @RequestMapping("/admin/showAddFlight")
     public String showAddFlightPage(){
         return "flights/addFlight";
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('FLIGHTS-ADMIN')")
     @RequestMapping("/admin/addFlight")
     public String addFlight(@ModelAttribute("flight") Flight flight,ModelMap modelmap){
        flightRepository.save(flight);
