@@ -31,7 +31,6 @@ public class ReservationController {
     public String showCompleteReservation(@RequestParam("flightId") Long flightId, ModelMap modelMap){
         LOGGER.info("showCompleteReservation() invoked with the Flight Id: " + flightId);
         Optional<Flight> flight=flightRepository.findById(flightId);
-        // handle error here
         if(!flight.isPresent()){
             LOGGER.error("Flight Not found: {}",flight.toString());
             throw new FlightNotFound("flightId "+flightId);

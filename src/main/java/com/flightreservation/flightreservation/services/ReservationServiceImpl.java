@@ -80,7 +80,7 @@ public class ReservationServiceImpl implements ReservationService {
         LOGGER.info("Generating  the itinerary");
         pdfGenerator.generateItenary(savedReservation,filePath);
         LOGGER.info("Emailing the Itinerary");
-        emailUtil.sendItenary("kaganakarthikeya03062003@gmail.com",filePath);
+        emailUtil.sendItenary("saratchandrahemanth2567@gmail.com",filePath);
 
         return savedReservation;
 

@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -33,12 +34,13 @@ public class FlightController {
         LOGGER.info("Flights found are"+flights.toString());
         return "flights/displayFlights";
     }
-
+    @PreAuthorize("hasRole('ADMIN')")
     @RequestMapping("/admin/showAddFlight")
     public String showAddFlightPage(){
         return "flights/addFlight";
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @RequestMapping("/admin/addFlight")
     public String addFlight(@ModelAttribute("flight") Flight flight,ModelMap modelmap){
        flightRepository.save(flight);

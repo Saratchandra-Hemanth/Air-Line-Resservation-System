@@ -20,7 +20,6 @@ public class ReservationRestController {
 
     @RequestMapping("/reservations/{id}")
     public Reservation findReservation(@PathVariable("id") Long id){
-        // handle error here what if no reservation found
         LOGGER.info("Inside findReservation() for id: " + id);
         Optional<Reservation> reservation=reservationRepository.findById(id);
         if(!reservation.isPresent()){
@@ -34,7 +33,6 @@ public class ReservationRestController {
     @RequestMapping(value = "/reservations", method = RequestMethod.POST)
     public Reservation updateReservation(@RequestBody ReservationUpdateRequest reservationUpdateRequest){
         Optional<Reservation> reservation=reservationRepository.findById(reservationUpdateRequest.getId());
-        // handle error here what if no reservation found
         LOGGER.info("Inside updateReservation() for " + reservationUpdateRequest);
         if(!reservation.isPresent()){
             LOGGER.error("No reservation exist with id "+reservationUpdateRequest.getId());
